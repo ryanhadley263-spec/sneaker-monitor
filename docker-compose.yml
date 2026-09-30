@@ -1,0 +1,8 @@
+services:
+  monitor:
+    build: .
+    ports: ["3000:3000"]
+    environment:
+      DEMO: "${DEMO:-0}"
+    volumes:
+      - ./data:/app/data

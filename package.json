@@ -1,0 +1,17 @@
+{
+  "name": "sneaker-monitor-control-center",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "node src/server.js",
+    "demo": "node src/demo.js",
+    "test": "node --test \"test/*.test.js\"",
+    "postinstall": "playwright install chromium || true"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "playwright": "^1.47.0"
+  },
+  "description": "Real-time sneaker release & restock monitor with headless-browser scrapers, live dashboard and Discord alerts",
+  "license": "MIT"
+}
