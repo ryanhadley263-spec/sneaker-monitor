@@ -35,7 +35,7 @@ app.post('/api/webhook/test', async (_req, res) => {
 
 if (process.env.DEMO === '1') hub.seedDemo();
 
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 3001;
 const host = process.env.HOST || '127.0.0.1'; // Docker sets HOST=0.0.0.0
 app.listen(port, host, () => console.log(`Control center: http://localhost:${port}${process.env.DEMO === '1' ? ' (demo mode)' : ''}`));
 process.on('SIGINT', async () => { await hub.shutdown(); process.exit(0); });

@@ -23,7 +23,7 @@ A real-time release and restock monitor for **Nike SNKRS** and **GOAT**. Headles
 git clone <this-repo>
 cd sneaker-monitor
 npm install
-npm run demo      # simulated drops at http://localhost:3000
+npm run demo      # simulated drops at http://localhost:3001
 ```
 
 For live monitoring, run `npm start`, add a monitor from the dashboard (for example `https://www.nike.com/launch`), and optionally paste a Discord webhook.

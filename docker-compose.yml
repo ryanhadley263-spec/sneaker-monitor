@@ -1,7 +1,7 @@
 services:
   monitor:
     build: .
-    ports: ["3000:3000"]
+    ports: ["3001:3001"]
     environment:
       DEMO: "${DEMO:-0}"
     volumes:
